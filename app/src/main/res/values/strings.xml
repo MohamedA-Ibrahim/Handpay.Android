@@ -1,6 +1,87 @@
 <resources>
-    <string name="app_name">Handpay</string>
+    <string name="app_name">Hand Pay</string>
+    
+    <!-- Navigation -->
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_payments">Payments</string>
+    <string name="title_invoices">Invoices</string>
+    <string name="title_loyalty">Loyalty</string>
+    <string name="title_profile">Profile</string>
+    
+    <!-- App Description -->
+    <string name="app_description">The first app in Saudi Arabia that enables customers to pay using their hands</string>
+    <string name="app_tagline">Pay with a wave of your hand</string>
+    
+    <!-- Home Screen -->
+    <string name="welcome_message">Welcome to Hand Pay</string>
+    <string name="home_subtitle">Revolutionary hand-based payments powered by Kosoor</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="scan_hand">Scan Hand</string>
+    <string name="view_invoices">View Invoices</string>
+    <string name="check_loyalty">Check Loyalty Points</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_title">Your Dashboard</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="monthly_savings">Monthly Savings</string>
+    <string name="stores_visited">Stores Visited</string>
+    <string name="payment_methods">Payment Methods</string>
+    
+    <!-- Payments -->
+    <string name="payments_title">Hand Payments</string>
+    <string name="scan_hand_to_pay">Scan your hand to make a payment</string>
+    <string name="payment_history">Payment History</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    <string name="hand_registration">Hand Registration</string>
+    <string name="biometric_setup">Biometric Setup</string>
+    
+    <!-- Invoices -->
+    <string name="invoices_title">Kosoor Invoices</string>
+    <string name="kosoor_integration">Integrated with Kosoor system</string>
+    <string name="view_all_invoices">View all your invoices across Kosoor stores</string>
+    <string name="filter_invoices">Filter Invoices</string>
+    <string name="search_invoices">Search Invoices</string>
+    <string name="invoice_details">Invoice Details</string>
+    
+    <!-- Loyalty -->
+    <string name="loyalty_title">Loyalty Program</string>
+    <string name="earn_points">Earn points with every purchase</string>
+    <string name="redeem_rewards">Redeem Rewards</string>
+    <string name="loyalty_tiers">Loyalty Tiers</string>
+    <string name="points_balance">Points Balance</string>
+    <string name="rewards_catalog">Rewards Catalog</string>
+    
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="payment_settings">Payment Settings</string>
+    <string name="security_settings">Security Settings</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="about_app">About App</string>
+    
+    <!-- Coming Soon -->
+    <string name="coming_soon">Coming Soon</string>
+    <string name="feature_development">This feature is under development</string>
+    <string name="stay_tuned">Stay tuned for updates</string>
+    
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="points_earned">Points Earned</string>
+    <string name="new_rewards">New Rewards Available</string>
+    <string name="security_alert">Security Alert</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 </resources>

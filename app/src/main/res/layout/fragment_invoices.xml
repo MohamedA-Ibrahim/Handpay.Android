@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_50"
+    android:orientation="vertical"
+    tools:context=".ui.invoices.InvoicesFragment">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_header_background"
+        android:padding="24dp"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invoices_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kosoor_integration"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:alpha="0.9"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all_invoices"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+    <!-- Search and Filter Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="@string/search_invoices"
+            android:background="@drawable/search_background"
+            android:paddingHorizontal="16dp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/filter_invoices"
+            android:textSize="14sp"
+            android:background="@drawable/secondary_button_background"
+            android:textColor="@color/white"
+            android:paddingHorizontal="16dp" />
+
+    </LinearLayout>
+
+    <!-- Invoice List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invoices_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="16dp"
+        android:clipToPadding="false" />
+
+    <!-- Coming Soon Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:padding="24dp"
+        android:layout_margin="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_receipt"
+            android:tint="@color/gray_400"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coming_soon"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_600"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feature_development"
+            android:textSize="16sp"
+            android:textColor="@color/gray_500"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stay_tuned"
+            android:textSize="14sp"
+            android:textColor="@color/gray_400"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout> 
