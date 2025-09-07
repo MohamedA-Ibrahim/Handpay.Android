@@ -26,8 +26,6 @@ class PaymentsFragment : Fragment() {
     }
 
     private fun setupPaymentHandlers() {
-        // TODO: Implement hand scanning functionality
-        // TODO: Implement payment method management
-        // TODO: Add biometric authentication
+        // Payment functionality will be implemented in future updates
     }
 } 

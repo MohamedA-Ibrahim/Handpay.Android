@@ -79,13 +79,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start Hand Scan"
+                android:text="Coming Soon"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:background="@drawable/primary_button_background"
+                android:background="@drawable/secondary_button_background"
                 android:textColor="@color/white"
                 android:paddingHorizontal="32dp"
-                android:paddingVertical="12dp" />
+                android:paddingVertical="12dp"
+                android:enabled="false"
+                android:alpha="0.6" />
 
         </LinearLayout>
 
@@ -99,115 +101,40 @@
             android:textColor="@color/gray_900"
             android:layout_marginBottom="16dp" />
 
+        <!-- Empty State for Payment Methods -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/rounded_card_background"
-            android:padding="16dp"
-            android:layout_marginBottom="24dp">
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
 
-            <!-- Credit Card -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_credit_card"
+                android:tint="@color/gray_400"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
+                android:text="No payment methods added"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_600"
+                android:layout_marginBottom="8dp" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_credit_card"
-                    android:tint="@color/primary"
-                    android:layout_marginEnd="16dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Credit/Debit Card"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/gray_900" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Visa •••• 1234"
-                        android:textSize="14sp"
-                        android:textColor="@color/gray_600" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_arrow_forward"
-                    android:tint="@color/gray_400" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray_200"
-                android:layout_marginHorizontal="16dp" />
-
-            <!-- Bank Account -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_account_balance"
-                    android:tint="@color/secondary"
-                    android:layout_marginEnd="16dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Bank Account"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/gray_900" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Al Rajhi Bank"
-                        android:textSize="14sp"
-                        android:textColor="@color/gray_600" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_arrow_forward"
-                    android:tint="@color/gray_400" />
-
-            </LinearLayout>
+                android:text="Add your first payment method to get started"
+                android:textSize="16sp"
+                android:textColor="@color/gray_500"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp" />
 
         </LinearLayout>
 

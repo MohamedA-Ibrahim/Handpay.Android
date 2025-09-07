@@ -25,8 +25,6 @@ class InvoicesFragment : Fragment() {
     }
 
     private fun setupInvoiceHandlers() {
-        // TODO: Implement Kosoor integration
-        // TODO: Implement invoice search and filtering
-        // TODO: Add invoice detail views
+        // Invoice functionality will be implemented in future updates
     }
 } 

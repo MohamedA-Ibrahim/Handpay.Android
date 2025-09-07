@@ -188,123 +188,38 @@
             android:textColor="@color/gray_900"
             android:layout_marginBottom="16dp" />
 
-        <!-- Sample Transaction Items -->
+        <!-- Empty State for Transactions -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/rounded_card_background"
-            android:padding="16dp">
+            android:padding="24dp"
+            android:gravity="center">
 
-            <!-- Transaction Item 1 -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_hand"
+                android:tint="@color/gray_400"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
+                android:text="No recent transactions"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_600"
+                android:layout_marginBottom="8dp" />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_hand"
-                    android:tint="@color/success"
-                    android:background="@drawable/circle_background"
-                    android:padding="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Coffee Shop"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/gray_900" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Today, 2:30 PM"
-                        android:textSize="14sp"
-                        android:textColor="@color/gray_600" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SAR 25.00"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/gray_900" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray_200"
-                android:layout_marginHorizontal="12dp" />
-
-            <!-- Transaction Item 2 -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="12dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_hand"
-                    android:tint="@color/success"
-                    android:background="@drawable/circle_background"
-                    android:padding="8dp" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Grocery Store"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/gray_900" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yesterday, 6:15 PM"
-                        android:textSize="14sp"
-                        android:textColor="@color/gray_600" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SAR 89.50"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/gray_900" />
-
-            </LinearLayout>
+                android:text="Your payment history will appear here"
+                android:textSize="14sp"
+                android:textColor="@color/gray_500"
+                android:gravity="center" />
 
         </LinearLayout>
 

@@ -1,54 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_50"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
     tools:context=".ui.loyalty.LoyaltyFragment">
 
-    <!-- Coming Soon Icon -->
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_star"
-        android:tint="@color/accent"
-        android:layout_marginBottom="32dp"
-        android:alpha="0.6" />
-
-    <!-- Coming Soon Title -->
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/coming_soon"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="@color/gray_900"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <!-- Coming Soon Message -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/feature_development"
-        android:textSize="18sp"
-        android:textColor="@color/gray_600"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"
-        android:lineSpacingExtra="4dp" />
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_header_background"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp">
 
-    <!-- Stay Tuned Message -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stay_tuned"
-        android:textSize="16sp"
-        android:textColor="@color/gray_500"
-        android:gravity="center"
-        android:alpha="0.8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loyalty_title"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
 
-</LinearLayout> 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/earn_points"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:alpha="0.9" />
+
+        </LinearLayout>
+
+        <!-- Points Balance Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card_background"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_star"
+                android:tint="@color/accent"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_900"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/points_balance"
+                android:textSize="18sp"
+                android:textColor="@color/gray_600" />
+
+        </LinearLayout>
+
+        <!-- Loyalty Tiers Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loyalty_tiers"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_900"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bronze Tier -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bronze_tier_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_star"
+                android:tint="@color/white"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bronze"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0-99 points"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/current_tier_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp" />
+
+        </LinearLayout>
+
+        <!-- Silver Tier -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/silver_tier_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_star"
+                android:tint="@color/white"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silver"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100-499 points"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Gold Tier -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/gold_tier_background"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_star"
+                android:tint="@color/white"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+ points"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:alpha="0.8" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView> 
