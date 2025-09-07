@@ -35,4 +35,10 @@
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
+    <fragment
+        android:id="@+id/navigation_payment_testing"
+        android:name="io.handpay.app.ui.paymenttesting.PaymentTestingFragment"
+        android:label="@string/title_payment_testing"
+        tools:layout="@layout/fragment_payment_testing" />
+
 </navigation>

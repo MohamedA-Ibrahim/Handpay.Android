@@ -9,6 +9,7 @@
     <string name="title_invoices">Invoices</string>
     <string name="title_loyalty">Loyalty</string>
     <string name="title_profile">Profile</string>
+    <string name="title_payment_testing">Payment Testing</string>
     
     <!-- App Description -->
     <string name="app_description">The first app in Saudi Arabia that enables customers to pay using their hands</string>
